@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@angular/animations": "^15.1.2",
+    "ngx-clipboard": "^15.1.0",
+    "ngx-toastr": "^16.0.2",
+    "short-crypt": "^2.1.1",
+    "uniqid": "^5.4.0"
+  }
+}

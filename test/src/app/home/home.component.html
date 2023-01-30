@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="lead">
+                URL Shortening Exam. <br />Written by jaymar daligdig
+                
+                
+            </p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <label>Enter Original</label>
+        <input type="text" class="form-control" #short />
+        <div class="alert alert-success" *ngIf="urlsrv.short !==''"  (click)="urlsrv.copyUrl(urlsrv.short)">
+  
+         {{urlsrv.short}}
+  
+  
+        </div>
+        <button class="btn btn-primary" (click)="urlsrv.generateShortUrl(short.value)">Generate Short ULR</button>
+      </div>
+      <div class="col-6">
+        <label>Enter Short</label>
+        <input type="text" class="form-control"  #original />
+  
+        <div class="alert alert-success" *ngIf="urlsrv.original !== ''"  (click)="urlsrv.copyUrl(urlsrv.original)">
+  
+          {{urlsrv.original}}
+   
+   
+         </div>
+        <button class="btn btn-primary" (click)="urlsrv.decryptShortUrl(original.value)">Show original ULR</button>
+      </div>
+    </div>
+  </div>
